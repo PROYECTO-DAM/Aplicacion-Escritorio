@@ -131,10 +131,10 @@ public class FichajeConnections {
             con.connect();
 
             String body = "{" +
-                    "\"userId\": \""+ user.getId() +"\", " +
-                    "\"fecha\": \""+ fecha +"\", " +
-                    "\"horas\": \""+ horas +"\", " +
-                    "\"proyecto\": \""+ proyecto +"\"" +
+                    "\"Trabajador\": \""+ user.getId() +"\", " +
+                    "\"Fecha\": \""+ fecha +"\", " +
+                    "\"Horas\": \""+ horas +"\", " +
+                    "\"Proyecto\": \""+ proyecto +"\"" +
                     "}";
 
             try (OutputStream os = con.getOutputStream()) {
