@@ -31,7 +31,7 @@ public class FichajeConnections {
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
             con.setRequestProperty("authorization", "Bearer " + token);
-            con.setRequestProperty("id", userId);
+            con.setRequestProperty("_id", userId);
             con.connect();
 
             int responseCode = con.getResponseCode();
